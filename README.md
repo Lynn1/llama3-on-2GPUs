@@ -18,13 +18,13 @@ I added the `concat_llama3_70Bf.py` script in this repo which can concatenate th
 
 #----Example:
 
-original_PATH="Meta-Llama-3-70B-Instruct/original"# replace this with your original model path
+original_PATH="Meta-Llama-3-70B-Instruct/original"       # replace this with your original model path
 
-MODEL_FOLDER_PATH="Meta-Llama-3-70B-Instruct-2shards"# replace this with your output path
+MODEL_FOLDER_PATH="Meta-Llama-3-70B-Instruct-2shards"    # replace this with your output path
 
-num_original_shards=8# the number of shards in the original model
+num_original_shards=8     # the number of shards in the original model
 
-num_new_shards=2# the number of shards you neeed(depends on the number of GPUs you have)
+num_new_shards=2          # the number of shards you neeed(depends on the number of GPUs you have)
 
 python ./concat_llama3_70Bf.py  \
 
