@@ -14,7 +14,7 @@ I added the `concat_llama3_70Bf.py` script in this repo which can concatenate th
 
 ### Step1: Recut the original llama3_70B_instruct model depending on the number of graphics cards you want to use
 
-```python
+```Bash
 
 #----Example:
 
@@ -38,7 +38,7 @@ python ./concat_llama3_70Bf.py  \
 
 run the `example_chat_completion.py` in the official folder: [meta-llama/llama3: The official Meta Llama 3 GitHub site](https://github.com/meta-llama/llama3)
 
-```
+```Bash
 torchrun --nproc_per_node 2 example_chat_completion.py \
     --ckpt_dir Meta-Llama-3-70B-Instruct-2shards/ \
     --tokenizer_path Meta-Llama-3-70B-Instruct-2shards/tokenizer.model \
